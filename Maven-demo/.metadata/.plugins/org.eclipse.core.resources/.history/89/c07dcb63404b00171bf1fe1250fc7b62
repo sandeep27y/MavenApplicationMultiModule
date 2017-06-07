@@ -1,0 +1,10 @@
+package org.EmployeeService;
+
+import java.sql.Date;
+
+public class Salaries {
+	private int emp_no;
+	private double salary;
+	private Date from_date;
+	private Date to_date;
+}

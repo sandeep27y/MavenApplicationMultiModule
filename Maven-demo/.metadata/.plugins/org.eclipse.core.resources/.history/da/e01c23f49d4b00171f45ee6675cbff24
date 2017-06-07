@@ -1,0 +1,13 @@
+package org.EmployeeReposoteries;
+
+import java.sql.Date;
+
+public class EmployeeDetails {
+	
+	private int emp_no;
+	private String first_name;
+	private String last_name;
+	private String gender;
+
+
+}

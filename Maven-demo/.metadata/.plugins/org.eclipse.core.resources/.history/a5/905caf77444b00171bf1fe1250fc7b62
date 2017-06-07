@@ -1,0 +1,13 @@
+package org.EmployeeService;
+
+import org.EmployeeReposoteries.Employee;
+import org.EmployeeReposoteries.EmployeeDAO;
+
+public class EmployeeService {
+	
+	public void getEmployeeInformation(){
+		EmployeeDAO employeeDAO = new EmployeeDAO();
+		Employee employee = employeeDAO.getEmployee();
+	}
+
+}

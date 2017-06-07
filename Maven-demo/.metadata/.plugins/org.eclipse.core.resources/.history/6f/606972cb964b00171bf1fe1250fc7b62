@@ -1,0 +1,18 @@
+package org.EmployeeService;
+
+import java.util.Scanner;
+
+import org.EmployeeReposoteries.Employee;
+import org.EmployeeReposoteries.EmployeeDAO;
+
+public class EmployeeService {
+	
+	public void getEmployeeInformation(){
+		EmployeeDAO employeeDAO = new EmployeeDAO();
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Please enter the Employee ID");
+		int id = scn.nextInt();
+		Employee employee = employeeDAO.getEmployee(id);
+	}
+
+}

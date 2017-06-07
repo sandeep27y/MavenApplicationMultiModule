@@ -1,0 +1,9 @@
+package org.EmployeeReposoteries;
+
+public class EmployeeDAO {
+	
+	public Employee getEmployee(){
+		return null;
+	}
+
+}

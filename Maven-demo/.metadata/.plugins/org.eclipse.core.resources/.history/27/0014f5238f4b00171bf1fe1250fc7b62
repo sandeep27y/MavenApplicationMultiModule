@@ -1,0 +1,27 @@
+package org.EmployeeReposoteries;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class EmployeeDAO {
+	
+	public Employee getEmployee(int id){
+		Employee e = null;
+		ResultSet rs =	null;
+		PreparedStatement pStatement = null;
+		Connection con = DataBaseConnection.getConnection();
+		try {
+			pStatement = con.prepareStatement("select * from employee where employeeNumber=?");
+			pStatement.setInt(1, id);
+			rs = pStatement.executeQuery();
+			while(rs.next()){
+				e=new Employee(Integer.parseInt(rs.getString("employeeNumber")), rs.getString("name"), Double.parseDouble(rs.getString("salary")), Integer.parseInt(rs.getString("age")), rs.getDate("joinDate"));
+			}
+		}catch(Exception e1){
+			e1.printStackTrace();
+		}
+		
+	}
+
+}

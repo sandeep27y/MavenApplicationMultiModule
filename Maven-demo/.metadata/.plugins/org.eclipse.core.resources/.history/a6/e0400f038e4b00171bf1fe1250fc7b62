@@ -1,0 +1,12 @@
+package org.EmployeeReposoteries;
+
+import java.sql.Connection;
+
+public class EmployeeDAO {
+	
+	public Employee getEmployee(){
+		Connection con = DataBaseConnection.getConnection(int id);
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package org.EmployeeApplication;
+
+import org.EmployeeService.EmployeeService;
+
+public class EmployeeApplication {
+	
+	public static void main(String[] args) {
+		EmployeeService employeeService = new EmployeeService();
+		employeeService.getEmployeeInformation();
+	}
+
+}
